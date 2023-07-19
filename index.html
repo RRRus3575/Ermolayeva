@@ -1,9 +1,186 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Photo Studio</title>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Photo Yermolaeva</title>
   </head>
-  <body></body>
+
+
+
+  <body>
+    <header>
+      <div class="header container">
+      <a href="./index.html"><img src="./image/logo.svg" alt="Моє" /></a>    
+      <nav>
+        <ul>          
+          <li><a href="" class="nav-link">Про мене</a> </li>
+          <li><a href="#photosession" class="nav-link">Фотосесії</a> </li>
+          <li><a href="#contacts" class="nav-link">Контакти</a> </li>
+        </ul>
+      </nav>
+    </div>
+    </header>
+
+
+
+    <main>
+      <section class="hero">
+
+        <h1 class="visually-hidden">Марина Єрмолаєва Фотограф</h1>
+
+        <img src="./image/ermol.jpg" alt="Єрмолаєва" />
+        <span>Твій атмосферний фотограф, що втілює фото-бажання.</span>
+        <img src="./image/marina.svg" alt="Марина" />
+        <img src="./image/hero-img.jpg" alt="тримаються за руки" />
+        <img src="./image/ermolaeva.svg" alt="Єрмолаєва" />
+        <span>КРОПИВНИЦЬКИЙ</span>
+        <span>(КІРОВОГРАД)</span>
+        <img src="./image/photographer.svg" alt="Фотограф" />
+        <div class="button-click"><a class="button-link">ХОЧУ ФОТО</a></div>
+        
+      </section>
+
+
+      <section id="photosession">
+
+        <h2 class="visually-hidden">Фотосесії</h2>
+
+        <img src="./image/photo.svg" alt="Фото" />
+        <img src="./image/sesii.svg" alt="сесії" />
+
+        <ul>
+          <li> 
+            <img src="./image/family.jpg" alt="сім'я" />
+            <p>СІМЕЙНІ <span>/ 2022</span></p>
+          </li>
+          <li>
+            <img src="./image/blue-girl.jpg" alt="Дівчина в синій сорочці" />
+          <p>ІНДИВІДУАЛЬНІ <span>/ 2023</span></p>
+          </li>
+          <li>
+            <img src="./image/riverside.jpg" alt="Хлопець в річці" />
+          <p>ТВОРЧІ <span>/ 2023</span></p>
+          </li>
+          <li>
+            <img src="./image/gimnastic.jpg" alt="Гімнастка" />
+            <p>КОНТЕНТ <span>/ 2023</span></p>
+          </li>
+          <li>
+            <img src="./image/november.jpg" alt="Дві дівчини біля річки" />
+          <p>ФОТО-ПРОГУЛЯНКИ <span>/ 2022</span></p>
+          </li>
+          <li>
+            <img src="./image/love.jpg" alt="Закохана пара біля вікна" />
+          <p> <SPAN lang="en">LOVE STORY</SPAN> <span>/ 2022</span></p>
+          </li>
+        </ul>
+       
+      </section>
+
+
+      <section>
+        <h2 class="visually-hidden">Відгуки</h2>
+
+        <img src="./image/vidguki.svg" alt="Відгуки">
+        <ul>
+          <li> 
+            <p>"Не можу налюбуватися на фото. Просто бомба!"</p>
+            <div>
+              <img src="./image/girl-red.jpg" alt="руда дівчина">
+              <div>
+                <p lang="en">from</p>
+                <p>Віка</p>
+              </div>
+              <div>
+                <p lang="en">to</p>
+                <p>Марина</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <p>“Наче сфотографувала мою душу після війни.”</p>
+            <div>
+              <img src="./image/boy-in-cap.jpg" alt="хлопець у кепці">
+              <div>
+                <p lang="en">from</p>
+                <p>Віка</p>
+              </div>
+              <div>
+                <p lang="en">to</p>
+                <p>Сергій</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <p>“Ви так гарно бачите... дійсно атмосфено вийшло!”</p>
+          <div>
+            <img src="./image/boy.jpg" alt="дівчина">
+            <div>
+              <p lang="en">from</p>
+              <p>Віка</p>
+            </div>
+            <div>
+              <p lang="en">to</p>
+              <p>Анастасія</p>
+            </div>
+          
+        </div>
+          </li>          
+        </ul>      
+          
+      </section>
+
+
+      <section id="contacts">
+        <h2 class="visually-hidden">Замов фото</h2>
+
+        <div>
+          <img src="./image/girl-with-lock.jpg" alt="дівчина з руками у замку">
+          <div>
+            <p>Хочешь відкрити себе по новому?</p>
+            <img src="./image/zamov.svg" alt="Замов">
+          </div>
+
+          <div>
+            <img src="./image/family-white.jpg" alt="Сімейне фото">
+            <div>
+              <p>Хочеш зберегти приємний момент з життя?</p>
+              <img src="./image/photo.svg" alt="фото">
+            </div>           
+        </div>
+
+        <div>
+          <form>
+            <label for="name">Ім’я *</label>
+            <input type="text" id="name">
+            <label for="phone">Телефон *</label>
+            <input type="tel" id="phone">
+            <label for="other">Деталі (за бажанням)</label>
+            <textarea name="other" id="other"></textarea>
+            <button class="button-click" type="submit">НАДІСЛАТИ</button>
+          </form>
+          <div>
+            <ul>
+              <li><a href=""><img src="./image/telegram.svg" alt="телеграм"></a></li>
+              <li><a href=""><img src="./image/insta.svg" alt="інстаграм"></a></li>
+              <li><a href=""><img src="./image/facebook.svg" alt="фейсбук"></a></li>
+            </ul>
+          </div>
+        </div>
+       
+      </section>
+
+
+
+      <footer>
+        <ul>
+          <li><p>Copyright reserved</p></li>
+          <li><p>Privecy Policy</p></li>
+          <li><p>Terms of use</p></li>
+        </ul>
+      </footer>
+    </main>
+  </body>
 </html>
