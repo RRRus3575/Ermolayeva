@@ -245,7 +245,7 @@ nav ul {
   height: 100%;
 
   padding-left: 16px;
-  border-left: 1px dashed #89909f;
+  border-left: 2px dashed #89909f;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -259,6 +259,10 @@ nav ul {
 }
 .rewies-name {
   width: 100%;
+}
+.rewies-name p {
+  width: 100%;
+  border-bottom: 1px solid #89909f;
 }
 .item-vika {
   position: absolute;
