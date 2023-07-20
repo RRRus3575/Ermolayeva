@@ -1,11 +1,11 @@
-@font-face {
+/* @font-face {
   font-family: "HelveticaNeueCyr";
   src: url("./font/helveticaneuecyr_roman.otf");
 }
 @font-face {
   font-family: "HelveticaNeueCyr italic";
   src: url("./font/helveticaneuecyr_ultralightitalic.otf");
-}
+} */
 
 body {
   font-family: "HelveticaNeueCyr";
