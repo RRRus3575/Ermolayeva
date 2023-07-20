@@ -1,5 +1,28 @@
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  src: url("./font/helveticaneuecyr_roman.otf");
+}
+@font-face {
+  font-family: "HelveticaNeueCyr italic";
+  src: url("./font/helveticaneuecyr_ultralightitalic.otf");
+}
+
+body {
+  font-family: "HelveticaNeueCyr";
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  color: #010f1d;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4;
+}
 a {
   text-decoration: none;
+}
+p {
+  margin: 0px;
 }
 ul {
   padding: 0;
@@ -8,10 +31,11 @@ ul {
 }
 .container {
   width: 1280px;
-  padding-left: 20px;
-  padding-right: 20px;
   margin-right: auto;
   margin-left: auto;
+}
+.section {
+  padding-top: 264px;
 }
 button {
   border: none;
@@ -19,15 +43,26 @@ button {
   padding: 0 59px 0 0;
   cursor: pointer;
 }
-.button-link {
-  margin: 0 59px 0 0;
-}
 
+.btn-arrow {
+  width: 100px;
+  height: 100px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #ffffff;
+  border-radius: 50%;
+}
 .button-click {
+  box-sizing: border-box;
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: end;
+  gap: 16px;
+  padding-right: 16px;
+  padding-left: 16px;
   width: 305px;
   height: 134px;
 
@@ -37,12 +72,10 @@ button {
   background-color: #5e4ae3;
 }
 
-.button-click ::before {
-  position: absolute;
-}
 header {
   width: 100%;
   position: fixed;
+  z-index: 2;
   top: 0;
   left: 0;
 
@@ -84,5 +117,161 @@ nav ul {
   margin: -1px;
 }
 .hero {
-  margin-top: 90px;
+  margin-top: 92px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.hero-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-inner {
+  height: 201px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.img-ermol {
+  width: 222px;
+}
+.hero-text {
+  width: 220px;
+}
+.hero-related {
+  width: 266px;
+  height: 128px;
+  margin-left: 28px;
+}
+.krop {
+  display: flex;
+  flex-direction: column;
+
+  line-height: 1;
+}
+.grey {
+  color: #89909f;
+}
+.photosession {
+  position: relative;
+  height: 2271px;
+}
+.photosession-block {
+  position: absolute;
+}
+.session {
+  margin-left: 217px;
+}
+.photo-list {
+  position: absolute;
+  width: 100%;
+  font-weight: 550;
+}
+.photo-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.item-family {
+  position: absolute;
+  right: 0;
+}
+.img-family {
+  width: 610px;
+}
+.item-blue-girl {
+  position: absolute;
+  top: 295px;
+  left: 0;
+}
+.img-blue-girl,
+.img-november,
+.img-love {
+  width: 414px;
+}
+.item-riverside {
+  position: absolute;
+  top: 704px;
+  right: 325px;
+}
+.img-riverside,
+.img-gimnastic {
+  width: 305px;
+}
+.item-gimnastic {
+  position: absolute;
+  top: 1079px;
+  left: 217px;
+}
+.item-november {
+  position: absolute;
+  right: 109px;
+  top: 1342px;
+}
+.item-love {
+  position: absolute;
+  top: 1719px;
+  left: 217px;
+}
+.rewies {
+  position: relative;
+  height: 605px;
+}
+.rewies-list {
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+.rewies-list li {
+  box-sizing: border-box;
+  display: flex;
+  gap: 16px;
+  padding: 28px;
+  width: 413px;
+  height: 250px;
+
+  font-style: italic;
+  background-color: #ffffff;
+}
+.rewies-text {
+  width: 250px;
+  padding-top: 50px;
+
+  font-size: 26px;
+}
+.rewies--item-wrap {
+  height: 100%;
+
+  padding-left: 16px;
+  border-left: 1px dashed #89909f;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+
+  font-size: 16px;
+  color: #89909f;
+}
+.rewies-img {
+  width: 62px;
+}
+.rewies-name {
+  width: 100%;
+}
+.item-vika {
+  position: absolute;
+  top: 0;
+  right: 217px;
+}
+.item-sergiy {
+  position: absolute;
+  top: 355px;
+  left: 108px;
+}
+.item-anastasia {
+  position: absolute;
+  top: 355px;
+  right: 108px;
 }
