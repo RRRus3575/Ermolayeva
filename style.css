@@ -94,6 +94,15 @@ button {
   color: #ffffff;
   background-color: #5e4ae3;
 }
+.button-link:active .btn-arrow {
+  position: absolute;
+  right: 16px;
+}
+.button-link:active .button-click {
+  color: #5e4ae3;
+
+  background-color: #5e4ae3;
+}
 
 header {
   width: 100%;
