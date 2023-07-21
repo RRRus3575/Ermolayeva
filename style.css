@@ -74,6 +74,7 @@ button {
   justify-content: center;
   align-items: center;
 
+  color: #5e4ae3;
   background-color: #ffffff;
   border-radius: 50%;
 }
@@ -348,6 +349,8 @@ textarea {
   width: 630px;
   height: 80px;
 
+  padding: 10px;
+
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -360,6 +363,22 @@ textarea {
 .mesangers-list {
   position: relative;
   width: 425px;
+}
+.mesangers-list a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 89px;
+  height: 89px;
+
+  color: #5e4ae3;
+
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+.mesangers-list a:hover {
+  color: #ffffff;
+  background-color: #5e4ae3;
 }
 .telegram {
   position: absolute;
@@ -386,4 +405,12 @@ footer {
 footer ul {
   display: flex;
   justify-content: space-between;
+}
+.icon {
+  width: 32px;
+  fill: currentColor;
+}
+.icon-arrow {
+  fill: currentColor;
+  width: 54px;
 }
