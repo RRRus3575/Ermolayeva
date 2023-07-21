@@ -39,9 +39,31 @@ ul {
 }
 button {
   border: none;
+  display: block;
 
-  padding: 0 59px 0 0;
   cursor: pointer;
+
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 305px;
+  height: 134px;
+  padding-left: 132px;
+  border-radius: 400px;
+
+  color: #ffffff;
+  background-color: #5e4ae3;
+}
+.btn-form {
+  height: 134px;
+  position: relative;
+}
+.form-arrow {
+  position: absolute;
+  z-index: 1;
+  top: 17px;
+  left: 16px;
 }
 
 .btn-arrow {
@@ -278,4 +300,90 @@ nav ul {
   position: absolute;
   top: 355px;
   right: 108px;
+}
+.girl-form {
+  width: 120px;
+}
+.family-form {
+  width: 219px;
+}
+.inner {
+  height: 161px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.form-wrap {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 129px;
+  font-weight: 550;
+  line-height: 1.5;
+}
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 20px;
+  width: 630px;
+}
+form div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+input {
+  box-sizing: border-box;
+  padding: 10px;
+  width: 305px;
+  height: 48px;
+  border-radius: 4px;
+  border: 1px solid #89909f;
+  background: #f2f2f2;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+}
+textarea {
+  width: 630px;
+  height: 80px;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+
+  border-radius: 4px;
+  border: 1px solid #89909f;
+  background: #f2f2f2;
+}
+.mesangers-list {
+  position: relative;
+  width: 425px;
+}
+.telegram {
+  position: absolute;
+  top: 0;
+  right: 324px;
+}
+.insta {
+  position: absolute;
+  top: 0;
+  right: 108px;
+}
+.facebook {
+  position: absolute;
+  top: 149px;
+  right: 216px;
+}
+footer {
+  margin-top: 128px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  border-top: 1px solid #89909f;
+}
+footer ul {
+  display: flex;
+  justify-content: space-between;
 }
