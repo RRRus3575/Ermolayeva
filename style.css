@@ -37,44 +37,67 @@ ul {
 .section {
   padding-top: 264px;
 }
+.btn-submit {
+  position: relative;
+}
 button {
+  position: absolute;
+  z-index: 2;
   border: none;
   display: block;
 
   cursor: pointer;
+  position: relative;
 
   box-sizing: border-box;
-  position: relative;
+
   display: flex;
   align-items: center;
+  gap: 16px;
   width: 305px;
   height: 134px;
-  padding-left: 132px;
+  padding-left: 16px;
   border-radius: 400px;
 
   color: #ffffff;
   background-color: transparent;
 }
-button:hover .btn-form {
-  background-color: #70699b;
-}
+
 .btn-form {
   height: 134px;
-  position: relative;
+  position: absolute;
+  width: 305px;
 
   background-color: #5e4ae3;
   border-radius: 400px;
 }
-.form-arrow {
-  position: absolute;
-  z-index: 0;
-  top: 17px;
-  left: 16px;
+.icon-arrow {
+  width: 54px;
+  fill: currentColor;
+}
+.block-arrow {
+  width: 100px;
+  height: 100px;
+  padding: 23px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #5e4ae3;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+button:active {
+  padding-left: 189px;
+  overflow: hidden;
+  columns: #5e4ae3;
 }
 
 .btn-arrow {
   width: 100px;
   height: 100px;
+  padding: 23px;
 
   display: flex;
   justify-content: center;
@@ -101,18 +124,16 @@ button:hover .btn-form {
   background-color: #5e4ae3;
 }
 
-.button-link:hover .button-click {
+.button-link:hover .button-click,
+.button-link:focus .button-click,
+button:hover + .btn-form,
+button:focus + .btn-form {
   background-color: #7b6ed3;
 }
 
-.button-link:active .btn-arrow {
-  position: absolute;
-  right: 16px;
-}
 .button-link:active .button-click {
-  color: #5e4ae3;
-
-  background-color: #5e4ae3;
+  padding-left: 189px;
+  overflow: hidden;
 }
 
 header {
@@ -429,8 +450,4 @@ footer ul {
 .icon {
   width: 32px;
   fill: currentColor;
-}
-.icon-arrow {
-  fill: currentColor;
-  width: 54px;
 }
