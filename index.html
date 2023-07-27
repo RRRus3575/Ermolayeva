@@ -226,20 +226,20 @@
         </div>
 
         <div class="form-wrap">
-          <form>
+          <form class="form">
             <div>
               <label for="name">Ім’я *</label>
-              <input type="text" id="name" class="input-name" />
+              <input type="text" id="name" class="input-name" name="name" />
             </div>
             <div>
               <label for="phone">Телефон *</label>
-              <input type="tel" id="phone" class="input-tel" />
+              <input type="tel" id="phone" class="input-tel" name="tel" />
             </div>
             <div>
               <label for="other"
                 >Деталі <span class="grey">(за бажанням)</span>
               </label>
-              <textarea name="other" id="other"></textarea>
+              <textarea name="other" id="other" name="other"></textarea>
             </div>
 
             <div class="btn-submit">
@@ -289,5 +289,6 @@
         <li><p>Terms of use</p></li>
       </ul>
     </footer>
+    <script type="module" src="./form.js"></script>
   </body>
 </html>
