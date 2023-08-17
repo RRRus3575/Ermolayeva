@@ -17,3 +17,20 @@
 .copyright-text {
   color: #ffffff;
 }
+header {
+  min-height: 100px;
+  background-color: #3f51b5;
+}
+footer {
+  min-height: 100px;
+  background-color: aquamarine;
+}
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main {
+  flex-grow: 1;
+}

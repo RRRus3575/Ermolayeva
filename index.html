@@ -14,8 +14,16 @@
   <body>
     <header>
       <div class="header container">
-        <a href="./index.html"><img src="./image/logo.svg" alt="Моє" /></a>
-        <nav>
+        <div class="nav-mobile">
+          <a href="./index.html"><img src="./image/logo.svg" alt="Моє" /></a>
+          <button class="nav-btn">
+            <svg>
+              <use href="./symbol-defs.svg#icon-nav-btn"></use>
+            </svg>
+          </button>
+        </div>
+
+        <nav class="nav-hidden">
           <ul>
             <li><a href="#photosession" class="nav-link">Фотосесії</a></li>
             <li><a href="#rewies" class="nav-link">Відгуки</a></li>
@@ -239,7 +247,7 @@
               <label for="other"
                 >Деталі <span class="grey">(за бажанням)</span>
               </label>
-              <textarea name="other" id="other" name="other"></textarea>
+              <textarea id="other" name="other"></textarea>
             </div>
 
             <div class="btn-submit">
