@@ -148,7 +148,7 @@ button:focus + .btn-form {
 MOBILE VERSION
 */
 
-@media screen and (max-width: 833px) {
+@media (max-width: 833px) {
   .container {
     max-width: 365px;
     padding-left: 4px;
@@ -271,13 +271,13 @@ MOBILE VERSION
 MOBILE + DESCTOP VERSION
 */
 
-@media screen and (max-width: 1199px) {
+@media (max-width: 1199px) {
 }
 /* 
 DESCTOP VERSION
 */
 
-@media screen and (min-width: 1440px) {
+@media (min-width: 1440px) {
   .nav-btn {
     display: none;
   }
@@ -579,6 +579,7 @@ DESCTOP VERSION
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
+    resize: none;
 
     border-radius: 4px;
     border: 1px solid #89909f;
