@@ -108,6 +108,9 @@ header {
   width: 100%;
   border-bottom: 1px solid #89909f;
 }
+footer {
+  border-top: 1px solid #89909f;
+}
 /* 
 MOBILE VERSION
 */
@@ -399,7 +402,5 @@ DESCTOP VERSION
     margin-top: 128px;
     padding-top: 20px;
     padding-bottom: 20px;
-
-    border-top: 1px solid #89909f;
   }
 }
