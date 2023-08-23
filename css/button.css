@@ -1,0 +1,155 @@
+.button {
+  position: absolute;
+  z-index: 2;
+  border: none;
+  display: block;
+
+  cursor: pointer;
+  padding: 16px 17px;
+
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  height: 134px;
+  width: 305px;
+
+  color: #ffffff;
+  background-color: transparent;
+}
+.button-click {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  border-radius: 400px;
+
+  color: #ffffff;
+  background-color: #5e4ae3;
+  transition: background-color linear 300ms;
+}
+.button-link:hover .button-click,
+.button-link:focus .button-click,
+button:hover + .btn-form,
+button:focus + .btn-form {
+  background-color: #7b6ed3;
+}
+.button-link:active .button-click {
+  overflow: hidden;
+}
+.btn-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #5e4ae3;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transition: color linear 300ms, background-color linear 300ms;
+}
+
+.btn-submit {
+  position: relative;
+  overflow: hidden;
+  height: 134px;
+  width: 305px;
+}
+.block-arrow {
+  width: 100px;
+  height: 100px;
+  padding: 23px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #5e4ae3;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transition: transform linear 300ms;
+}
+
+.btn-form {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background-color: #5e4ae3;
+  border-radius: 400px;
+  height: 134px;
+  width: 305px;
+}
+.icon-arrow {
+  width: 54px;
+  fill: currentColor;
+}
+.button:active {
+  color: transparent;
+}
+.button:active .block-arrow {
+  transform: translateX(172px);
+}
+
+@media (max-width: 833px) {
+  .button-click {
+    padding-right: 6px;
+    padding-left: 6px;
+    gap: 9px;
+    width: 84px;
+    height: 37px;
+    font-size: 6px;
+  }
+  .button-link:active .button-click {
+    padding-left: 51px;
+  }
+  .btn-arrow {
+    width: 29px;
+    height: 29px;
+    padding: 6px;
+  }
+}
+
+@media (min-width: 1440px) {
+  button {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: 305px;
+    height: 134px;
+    padding-left: 16px;
+    border-radius: 400px;
+
+    color: #ffffff;
+    background-color: transparent;
+  }
+
+  .btn-form {
+    height: 134px;
+    width: 305px;
+  }
+
+  .btn-arrow {
+    width: 100px;
+    height: 100px;
+    padding: 23px;
+  }
+  .button-click {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-right: 16px;
+    padding-left: 16px;
+    width: 305px;
+    height: 134px;
+
+    border-radius: 400px;
+
+    color: #ffffff;
+    background-color: #5e4ae3;
+  }
+
+  .button-link:active .button-click {
+    padding-left: 189px;
+  }
+}

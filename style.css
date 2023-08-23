@@ -1,3 +1,5 @@
+@import url(./css/forms.css);
+@import url(./css/button.css);
 html,
 body {
   width: 100%;
@@ -13,7 +15,7 @@ body {
   line-height: 1.4;
 }
 img {
-  display: inline-block;
+  display: block;
   max-width: 100%;
 }
 a {
@@ -41,21 +43,7 @@ ul {
 a {
   color: inherit;
 }
-button {
-  position: absolute;
-  z-index: 2;
-  border: none;
-  display: block;
 
-  cursor: pointer;
-  position: relative;
-
-  display: flex;
-  align-items: center;
-
-  color: #ffffff;
-  background-color: transparent;
-}
 footer ul {
   display: flex;
   justify-content: space-between;
@@ -86,38 +74,14 @@ header {
   flex-direction: column;
   justify-content: space-between;
 }
+.hero-images {
+  display: flex;
+}
 .grey {
   color: #89909f;
   font-style: italic;
 }
-.button-click {
-  position: relative;
-  display: flex;
-  align-items: center;
 
-  border-radius: 400px;
-
-  color: #ffffff;
-  background-color: #5e4ae3;
-}
-.button-link:hover .button-click,
-.button-link:focus .button-click,
-button:hover + .btn-form,
-button:focus + .btn-form {
-  background-color: #7b6ed3;
-}
-.button-link:active .button-click {
-  overflow: hidden;
-}
-.btn-arrow {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  color: #5e4ae3;
-  background-color: #ffffff;
-  border-radius: 50%;
-}
 .rewies-list li {
   padding: 16px;
   display: flex;
@@ -212,22 +176,7 @@ MOBILE VERSION
   .photographer {
     width: 263px;
   }
-  .button-click {
-    padding-right: 6px;
-    padding-left: 6px;
-    gap: 9px;
-    width: 84px;
-    height: 37px;
-    font-size: 6px;
-  }
-  .button-link:active .button-click {
-    padding-left: 51px;
-  }
-  .btn-arrow {
-    width: 29px;
-    height: 29px;
-    padding: 6px;
-  }
+
   .photo {
     width: 148px;
   }
@@ -278,93 +227,11 @@ DESCTOP VERSION
 */
 
 @media (min-width: 1440px) {
-  .nav-btn {
-    display: none;
-  }
   .container {
     width: 1280px;
   }
   .section {
     padding-top: 264px;
-  }
-  .btn-submit {
-    position: relative;
-  }
-  button {
-    position: absolute;
-    z-index: 2;
-    border: none;
-    display: block;
-
-    cursor: pointer;
-    position: relative;
-
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    width: 305px;
-    height: 134px;
-    padding-left: 16px;
-    border-radius: 400px;
-
-    color: #ffffff;
-    background-color: transparent;
-  }
-
-  .btn-form {
-    height: 134px;
-    position: absolute;
-    width: 305px;
-
-    background-color: #5e4ae3;
-    border-radius: 400px;
-  }
-  .icon-arrow {
-    width: 54px;
-    fill: currentColor;
-  }
-  .block-arrow {
-    width: 100px;
-    height: 100px;
-    padding: 23px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    color: #5e4ae3;
-    background-color: #ffffff;
-    border-radius: 50%;
-  }
-  button:active {
-    padding-left: 189px;
-    overflow: hidden;
-    columns: #5e4ae3;
-  }
-
-  .btn-arrow {
-    width: 100px;
-    height: 100px;
-    padding: 23px;
-  }
-  .button-click {
-    position: relative;
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    padding-right: 16px;
-    padding-left: 16px;
-    width: 305px;
-    height: 134px;
-
-    border-radius: 400px;
-
-    color: #ffffff;
-    background-color: #5e4ae3;
-  }
-
-  .button-link:active .button-click {
-    padding-left: 189px;
   }
 
   header {
@@ -527,109 +394,12 @@ DESCTOP VERSION
     top: 355px;
     right: 108px;
   }
-  .girl-form {
-    width: 120px;
-  }
-  .family-form {
-    width: 219px;
-  }
-  .inner {
-    height: 161px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .form-wrap {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 129px;
-    font-weight: 550;
-    line-height: 1.5;
-  }
-  form {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px 20px;
-    width: 630px;
-  }
-  form div {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-  }
-  input {
-    padding: 10px;
-    width: 305px;
-    height: 48px;
-    border-radius: 4px;
-    border: 1px solid #89909f;
-    background: #f2f2f2;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.5;
-  }
-  textarea {
-    width: 630px;
-    height: 80px;
 
-    padding: 10px;
-
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.5;
-    resize: none;
-
-    border-radius: 4px;
-    border: 1px solid #89909f;
-    background: #f2f2f2;
-  }
-  .mesangers-list {
-    position: relative;
-    width: 425px;
-  }
-  .mesangers-list a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 89px;
-    height: 89px;
-
-    color: #5e4ae3;
-
-    border-radius: 50%;
-    background-color: #ffffff;
-  }
-  .mesangers-list a:hover {
-    color: #ffffff;
-    background-color: #5e4ae3;
-  }
-  .telegram {
-    position: absolute;
-    top: 0;
-    right: 324px;
-  }
-  .insta {
-    position: absolute;
-    top: 0;
-    right: 108px;
-  }
-  .facebook {
-    position: absolute;
-    top: 149px;
-    right: 216px;
-  }
   footer {
     margin-top: 128px;
     padding-top: 20px;
     padding-bottom: 20px;
 
     border-top: 1px solid #89909f;
-  }
-
-  .icon {
-    width: 32px;
-    fill: currentColor;
   }
 }
