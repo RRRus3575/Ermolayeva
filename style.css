@@ -223,7 +223,7 @@ MOBILE VERSION
 MOBILE + DESCTOP VERSION
 */
 
-@media (max-width: 1199px) {
+@media (min-width: 834px) and (max-width: 1199px) {
 }
 /* 
 DESCTOP VERSION
