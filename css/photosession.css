@@ -1,0 +1,142 @@
+.photo-list li {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+}
+
+/* Mobile */
+@media (max-width: 833px) {
+  .photo {
+    width: 148px;
+  }
+  .sessii {
+    width: 127px;
+    margin-left: 92px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+  }
+  .photo-list,
+  .rewies-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 834px) and (max-width: 1299px) {
+  .photo-list {
+    height: 1600px;
+  }
+  .sessii {
+    margin-left: 227px;
+  }
+  .item-family {
+    position: absolute;
+    width: 405px;
+    right: 0;
+    top: 230px;
+  }
+  .item-blue-girl {
+    position: absolute;
+    width: 288px;
+    left: 0;
+    top: 270px;
+  }
+  .item-riverside {
+    position: absolute;
+    width: 288px;
+    right: 101px;
+    top: 625px;
+  }
+  .item-gimnastic {
+    position: absolute;
+    width: 187px;
+    left: 101px;
+    top: 758px;
+  }
+  .item-november {
+    position: absolute;
+    width: 288px;
+    right: 0;
+    top: 1113px;
+  }
+  .item-love {
+    position: absolute;
+    width: 288px;
+    left: 101px;
+    top: 1192px;
+  }
+  .rewies {
+    position: relative;
+  }
+}
+
+/* Tablet + desktop */
+
+@media (min-width: 834px) {
+  .photosession {
+    position: relative;
+  }
+  .photosession-block {
+    position: absolute;
+  }
+}
+
+/* Desktop */
+
+@media (min-width: 1300px) {
+  .photosession {
+    height: 2271px;
+  }
+  .session {
+    margin-left: 217px;
+  }
+  .photo-list {
+    position: absolute;
+    width: 100%;
+    font-weight: 550;
+  }
+
+  .item-family {
+    position: absolute;
+    right: 0;
+  }
+  .img-family {
+    width: 610px;
+  }
+  .item-blue-girl {
+    position: absolute;
+    top: 295px;
+    left: 0;
+  }
+  .img-blue-girl,
+  .img-november,
+  .img-love {
+    width: 414px;
+  }
+  .item-riverside {
+    position: absolute;
+    top: 704px;
+    right: 325px;
+  }
+  .img-riverside,
+  .img-gimnastic {
+    width: 305px;
+  }
+  .item-gimnastic {
+    position: absolute;
+    top: 1079px;
+    left: 217px;
+  }
+  .item-november {
+    position: absolute;
+    right: 109px;
+    top: 1342px;
+  }
+  .item-love {
+    position: absolute;
+    top: 1719px;
+    left: 217px;
+  }
+}
