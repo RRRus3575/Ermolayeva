@@ -1,0 +1,44 @@
+footer ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  border-top: 1px solid #89909f;
+}
+/* 
+  MOBILE VERSION
+  */
+
+@media (max-width: 833px) {
+  footer {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+  }
+}
+
+/* 
+  TABLET
+  */
+@media (min-width: 834px) and (max-width: 1299px) {
+  footer {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+}
+
+/* 
+  DESCTOP VERSION
+  */
+
+@media (min-width: 1440px) {
+  footer {
+    margin-top: 128px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}

@@ -61,6 +61,21 @@ textarea {
   fill: currentColor;
 }
 
+/* 
+MOBILE + TABLET 
+*/
+
+@media (max-width: 1299px) {
+  .title-wrap-form {
+    max-width: 100%;
+    position: relative;
+  }
+}
+
+/* 
+MOBILE VERSION
+*/
+
 @media (max-width: 833px) {
   form {
     display: flex;
@@ -124,6 +139,90 @@ textarea {
     height: 84px;
   }
 }
+
+/* TABLET */
+
+@media (min-width: 834px) and (max-width: 1299px) {
+  .girl-form {
+    width: 120px;
+  }
+  .family-form {
+    width: 157px;
+    position: absolute;
+    top: 0;
+    right: 94px;
+  }
+  .zamov {
+    width: 391px;
+    position: absolute;
+    top: 42px;
+    left: 136px;
+  }
+  .form-photo {
+    width: 309px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .form-open {
+    width: 138px;
+    position: absolute;
+    top: 0;
+    left: 136px;
+  }
+  .form-save {
+    width: 186px;
+    position: absolute;
+    top: 130px;
+    left: 304px;
+  }
+  .title-wrap-form {
+    height: 213px;
+
+    font-size: 14px;
+    line-height: 120%;
+  }
+  .form-wrap {
+    margin-top: 67px;
+  }
+  input {
+    width: 389px;
+    height: 48px;
+  }
+  textarea {
+    width: 794px;
+    height: 80px;
+  }
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 16px;
+  }
+  .mesangers-list {
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    gap: 100px 200px;
+
+    margin-top: 80px;
+    margin-bottom: 70px;
+  }
+  .mesangers-list a {
+    width: 89px;
+    height: 89px;
+  }
+}
+
+/* 
+TABLET + DESCTOP VERSION
+*/
+
+@media (min-width: 834px) {
+}
+
+/* 
+DESCTOP VERSION
+*/
 
 @media (min-width: 1440px) {
   .title-wrap-form {
