@@ -231,20 +231,20 @@
         </div>
 
         <div class="form-wrap">
-          <form class="form">
+          <form class="form" id="contactForm">
             <div>
               <label for="name">Ім’я *</label>
-              <input type="text" id="name" class="input-name" name="name" />
+              <input type="text" id="name" class="input-name" name="name" required />
             </div>
             <div>
               <label for="phone">Телефон *</label>
-              <input type="tel" id="phone" class="input-tel" name="tel" />
+              <input type="tel" id="phone" class="input-tel" name="phone" required />
             </div>
             <div>
               <label for="other"
                 >Деталі <span class="grey">(за бажанням)</span>
               </label>
-              <textarea id="other" name="other"></textarea>
+              <textarea id="other" name="message"></textarea>
             </div>
 
             <div class="btn-submit">
@@ -294,5 +294,6 @@
         <li><p>Terms of use</p></li>
       </ul>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
